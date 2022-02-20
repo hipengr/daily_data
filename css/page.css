@@ -1,0 +1,76 @@
+/* CSS for regular article pages */
+body { font-family: Arial; font-size: 16px; 
+    max-width:1160px; min-width:500px; margin: auto; padding-left:8px; padding-right:4px;}
+
+h1.sh {margin-bottom:2px;}
+h2 {margin-top:35px;}
+
+p.wp {clear:left; min-width:500px;} /* Paragraph with picture */
+p.wp {margin-left:0px;}
+
+img { margin-bottom: 5px; margin-right: 5px;}
+
+img.l_narrow { float:left; margin-right: 20px; margin-bottom:15px; }
+img.l { float:left; margin-right: 20px; margin-bottom:15px; }
+@media (max-width: 750px) { img.l { display: block; float:none;} }
+
+img.l_wide { float:left; clear:left; margin-right: 20px; margin-bottom:15px;}
+@media (max-width: 750px) { img.l_wide { width:500px; height:auto; display: block; float:none;} }
+
+img.r { float: right; clear:right; margin-bottom:15px; margin-top:5px;
+margin-left: 8px; padding-right:2px; margin-right:0px;}
+
+img.th { width: 160; height: 105; margin-right: 8px; margin-bottom:8px;}
+
+
+
+iframe.yt { width:calc(100vw - 32px); max-width:1150px; min-width:500px;
+          height:calc(56.4vw - 18px); max-height:646px; min-height:281; border:0;}
+
+iframe.yto { width:calc(100vw - 32px); max-width:640px; min-width:400px;
+          height:calc(66.6vw - 24px); max-height:480px; min-height:300; border:0;}
+          
+div.link_th {display:block; clear:both; font-weight:bold; min-width:500px; padding-top:8px;}
+
+div.th {float:left; box-sizing: border-box; height:210px; 
+    margin-right:8px; margin-left:10px; width: 210px;
+font-weight:normal; font-size:18px; }
+
+div.th img { width: 192; height: 126; margin-right: 12px;
+  margin-bottom:4px; border-width:1px; border-style:solid; display: block; background-color: #a0a0a0;}
+
+div.th p {margin-top:0px; padding-left:0px; /*width:225px;*/}
+
+@media (max-width: 1170px) {div.th {margin-left: calc(100vw/8 - 110px); margin-right: calc(100vw/8 - 110px);}}
+@media (max-width: 950px)  {div.th {margin-left: calc(100vw/6 - 110px); margin-right: calc(100vw/6 - 110px);}}
+@media (max-width: 720px)  {div.th {margin-left: calc(100vw/4 - 115px); margin-right: calc(100vw/4 - 115px);}}
+@media (max-width: 500px)  {div.th {margin-left: auto; margin-right:20px;}}
+
+div.fin {clear:left; font-weight:bold; margin-bottom:20px;}
+
+/* Two column items with thumnails, text on right */
+div.col2 { float:left; width:42%; height:190px; padding-left: 10px; margin-right:20px;
+    font-size:20px;}
+div.col2 img { width: 200; height: 131; float: left; margin-right: 20px;
+    margin-bottom:4px; border-width:2px; border-color: #9090b0; 
+    border-style:solid; display: block; background-color: #ffffff;}
+   
+@media (max-width: 900px) {
+    div.col2 {width:100%; height: 210px; font-size:23px; }
+    div.col2 img { width: 240; height: 157;}
+}
+
+
+/* Larger item text on right style, three columns on full size */
+div.col3 { float:left; width:32%; height:125px; padding-left:10px; padding-top:15px;
+    font-size:20px;}
+    
+div.col3 img { width: 176; height: 115; 
+    margin-right: 12px; margin-top: -15px; margin-bottom:4px; float: left;
+    border-width:2px; border-color: #9090b0; border-style:solid; }
+
+@media (max-width: 1150px) {
+    div.col3 {width:48%; height:140px; font-size:22px;}
+    div.col3 img {width:200; height: 131px;}
+}
+@media (max-width: 800px) {div.col3 {width:100%}}
